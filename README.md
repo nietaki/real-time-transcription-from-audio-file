@@ -152,8 +152,6 @@ The AssemblyAI transcript chunks can have their **start timestamps** a bit too l
 
 The AssemblyAI transcript chunks usually have their **end timestamps** noticeably late - the chunks usually contain either a period of silence at the end, or even slightly overlap with the beginning of the next utterance. **Usually** the bulk of the information from the audio slice is **at the beginning of it** - closer to the start than to the end.
 
-The beginnings of utterances are moved even further forward in time when using Recall.
-
 Recall returns the timestamps of individual words, from the chunks streaming from AssemblyAI. It seems like it runs a heuristic, where it assumes the information is located roughly in the middle of a chunk returned from AssemblyAI and leaves segments of silence at the beginning and end of the utterance. It also seems to add more silence in the beginning than in the end.
 
 This leads to the timestamps being "compressed" in time (grouped more tightly together) but also on average moved forward in time. 
