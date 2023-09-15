@@ -76,7 +76,7 @@ Words we got from Recall:
 
 How the audio file, the AssemblyAI live transcription and the Recall words align:
 
-![](img/not_much.png)
+![](img/ship_for_sure.png)
 
 ### Example 2
 
