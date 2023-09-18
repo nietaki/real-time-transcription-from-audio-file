@@ -1,0 +1,80 @@
+0.0	5.31	<empty>
+5.31	10.62	<empty>
+10.62	15.93	<empty>
+15.93	21.24	<empty>
+21.24	26.55	<empty>
+26.55	31.86	<empty>
+31.86	35.41	Yelp. 
+35.41	40.28	Really good. 
+40.28	42.95	Really good. 
+42.95	44.74	You'll say pretty. 
+44.74	50.05	<empty>
+50.05	55.36	<empty>
+55.36	60.67	<empty>
+60.67	65.98	<empty>
+65.98	71.29	<empty>
+71.29	76.6	<empty>
+76.6	81.91	<empty>
+81.91	83.7	All right. 
+83.7	88.57	Does Anyone have anything they want to discuss this week. 
+88.57	93.88	<empty>
+93.88	99.19	<empty>
+99.19	101.86	If we're looking for topics. 
+101.86	104.53	That we are. 
+104.53	106.76	I don't know. 
+106.76	109.43	If anyone ended up investigating. 
+109.43	111.66	The memory consumption thing. 
+111.66	113.89	Because. 
+113.89	120.08	From yesterday. I think it was happening before. Because that reminded me. 
+120.08	123.19	If I finally finished. 
+123.19	125.86	The new version. 
+125.86	128.09	Of the tool. 
+128.09	132.08	I've been kind of responsible for a while now. 
+132.08	132.99	It has. 
+132.99	137.86	The Observer. 
+137.86	140.53	Or like htop, like. 
+140.53	148.04	Interface for investigating like the memory consumption both like the atom tables and everything else. And like. 
+148.04	148.95	Per. 
+148.95	154.7	Process stuff. So if we ever end up in a position where it needs investigation. 
+154.7	164.85	If I bring it to production ready, we could use that just kind of flagging it up. And I don't know how much of a problem the memory consumption thing is for now for us. 
+164.85	171.04	Yeah. I'd be really interested in seeing how it looks. 
+171.04	174.59	Let's just see how we're doing right now anyway. 
+174.59	178.14	We got three nodes still up, though. 
+178.14	185.65	I think we're kind of normal for today. We had a bit of a cpu spike as well. 
+185.65	194.92	Yeah. We didn't get time to dive in to figure out what was actually triggering it. 
+194.92	198.03	Maybe we can spin by two nodes. 
+198.03	205.98	And keep an eye on things for tomorrow. Well, I'll leave it for now because we're kind of, like, busy part of the day. 
+205.98	214.81	But maybe in the morning, let's bring it back down to two. And then if we see another spike, we can dig in. 
+214.81	221.0	If you have any more information. 
+221.0	222.79	About. 
+222.79	224.58	This tool. 
+224.58	226.37	Maybe you could share that. 
+226.37	230.8	Finish some work. I was kind of looking. 
+230.8	237.87	If it's ready, but I had some unexpected errors and whatever. So maybe I can say like, okay, if you want to investigate and can wait a week. 
+237.87	243.62	I'm going to get stuff ready for in a week and I also still don't have access to. 
+243.62	247.61	Prod machines to kind of ssh. 
+247.61	251.16	And open the electric console there. So. 
+251.16	254.27	I can't do anything hands on yet. 
+254.27	255.62	So. 
+255.62	260.93	Let's wait. Okay. Yeah. I think it's like we still have. 
+260.93	264.48	Basic tooling around telling this stuff. 
+264.48	266.71	Like you use the built in. 
+266.71	273.34	Erlang process info to get information about memory and reductions. 
+273.34	276.01	It's not always. 
+276.01	280.44	Fruitful, in terms of these debugging. 
+280.44	284.87	Memory is a little easier to track because. 
+284.87	289.3	You're just taking it from memory of a cpu. It seems to. 
+289.3	296.37	Moving targets. It's very hard to kind of figure out what's eating it. 
+296.37	297.72	Yeah. 
+297.72	306.55	We can ship for sure. Wait for that. Especially if it's something you're doing in your free time. 
+306.55	311.86	Okay. I don't have much to contribute right now. 
+311.86	315.85	But I just wanted to fill the sale, okay. 
+315.85	319.84	Anyone have anything else. 
+319.84	324.71	I don't have anything. 
+324.71	333.54	After me getting the taxi to the airport because the bus didn't come rushing to the airport. My flight was toyed for two and a half hours. 
+333.54	336.65	I didn't get home until 130 in the morning. 
+336.65	340.64	So it has to be the most probable days. 
+340.64	343.31	But things happen. 
+343.31	346.86	But we can leave it there for today. Then if we have nothing else. 
+346.86	349.97	Enjoy your 25 minutes back. 
+349.97	355.28	<empty>
