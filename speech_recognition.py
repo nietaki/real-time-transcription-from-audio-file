@@ -62,11 +62,16 @@ async def send_receive():
             while True:
                 try:
                     result_str = await _ws.recv()
-                    # print(result_str)
-                    start = json.loads(result_str)['audio_start'] 
-                    end = json.loads(result_str)['audio_end'] 
-                    text = json.loads(result_str)['text'] 
-                    print(str(start) + " -> " + str(end) + ": " + text)
+                    payload = json.loads(result_str)
+                    if 'message_type' in payload and payload['message_type'] == 'FinalTranscript':
+                        start = payload['audio_start'] 
+                        end = payload['audio_end'] 
+                        print(str(start) + " -> " + str(end) + ": ")
+                        for word in payload['words']:
+                            start = word['start'] 
+                            end = word['end'] 
+                            text = word['text'] 
+                            print(" | " + str(start) + " -> " + str(end) + ": " + text)
 
                 except websockets.exceptions.ConnectionClosedError as e:
                     print(e)
