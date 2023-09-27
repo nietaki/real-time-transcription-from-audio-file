@@ -41,6 +41,12 @@ You'll see that while the returned utterance bounds are mostly correct, the time
 
 **NOTE:** This seems to be especially true for words at the beginnings of utterances - the words within an utterance seem "squished together" in time, within the utterance, so the first ones are the most affected.
 
+## The impact of buffer size on the transcription
+
+Not really noticeable - see below:
+
+![](img/different_buffer_lengths.png)
+
 ## Analysis - legacy
 
 ### Example 1
