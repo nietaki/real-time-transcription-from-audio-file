@@ -8,7 +8,10 @@ import sys
 
 import pyaudio
  
-FRAMES_PER_BUFFER = 3200
+# FRAMES_PER_BUFFER = 3200 # 200ms
+FRAMES_PER_BUFFER = 16000 # 1s
+# FRAMES_PER_BUFFER = 16000 * 10 # 2s
+# FRAMES_PER_BUFFER = 1600 # 100ms
 FORMAT = pyaudio.paInt16
 CHANNELS = 1
 RATE = 16000
@@ -37,13 +40,12 @@ async def send_receive():
         ping_timeout=20
     ) as _ws:
         with open(OUT_FILE, "w") as f:
-            await asyncio.sleep(0.1)
+            await asyncio.sleep(FRAMES_PER_BUFFER / RATE / 2)
             print("Receiving SessionBegins ...")
 
             session_begins = await _ws.recv()
             print(session_begins)
             print("Sending messages ...")
-
 
             async def send():
                 while True:
@@ -61,7 +63,7 @@ async def send_receive():
                     except Exception as e:
                         assert False, "Not a websocket 4008 error"
 
-                    await asyncio.sleep(0.1)
+                    await asyncio.sleep(FRAMES_PER_BUFFER / RATE / 2)
                 
                 return True
             
